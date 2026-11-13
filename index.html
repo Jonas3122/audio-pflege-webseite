@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pflege & Therapie - Audio-Sammlung</title>
+    <style>
+        /* Grundlegendes Seitendesign */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        /* Container für die Audio-Karten */
+        .playlist {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Styling der einzelnen Audio-Karte */
+        .audio-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Themen-Badge / Kategorie-Tag */
+        .category {
+            display: inline-block;
+            background-color: #3498db; /* Blau */
+            color: white;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 4px 10px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        /* Farbvarianten für verschiedene Themen */
+        .category.green { background-color: #2ecc71; }
+        .category.orange { background-color: #e67e22; }
+        .category.purple { background-color: #9b59b6; }
+
+        .audio-card h2 {
+            margin: 5px 0 8px 0;
+            font-size: 1.25rem;
+            color: #34495e;
+        }
+
+        .audio-card p {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+
+        /* HTML5 Audioplayer auf voller Breite */
+        audio {
+            width: 100%;
+            outline: none;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Pflege & nicht-Medikamentöse Maßnahmen – Audio-Sammlung</h1>
+
+    <div class="playlist">
+
+        <!-- 1. BASALE STIMULATION -->
+        <div class="audio-card">
+            <span class="category">Pflegekonzept</span>
+            <h2>Basale Stimulation</h2>
+            <p>Audioaufnahme zum Thema Basale Stimulation</p>
+            <audio controls>
+                <source src="deine-datei.mp3" type="audio/mpeg">
+                Ihr Browser unterstützt das Audio-Element leider nicht.
+            </audio>
+        </div>
+
+        <!-- 2. SNOEZELEN RAUM -->
+        <div class="audio-card">
+            <span class="category green">Entspannung</span>
+            <h2>Snoezelen Raum</h2>
+            <p>Audioaufnahme zum Snoezelen Raum</p>
+            <audio controls>
+                <source src="deine-datei2.mp3" type="audio/mpeg">
+                Ihr Browser unterstützt das Audio-Element leider nicht.
+            </audio>
+        </div>
+
+        <!-- 3. AROMAPFLEGE -->
+        <div class="audio-card">
+            <span class="category orange">Geruchswahrnehmung</span>
+            <h2>Aromapflege</h2>
+            <p>Audioaufnahme zum Thema Aromapflege</p>
+            <audio controls>
+                <source src="deine-datei3.mp3" type="audio/mpeg">
+                Ihr Browser unterstützt das Audio-Element leider nicht.
+            </audio>
+        </div>
+
+        <!-- 4. PHYSIKALISCHE ANWENDUNGEN -->
+        <div class="audio-card">
+            <span class="category purple">Kälte & Wärme</span>
+            <h2>Physikalische Anwendungen</h2>
+            <p>Audioaufnahme zu physikalischen Anwendungen</p>
+            <audio controls>
+                <source src="deine-datei4.mp3" type="audio/mpeg">
+                Ihr Browser unterstützt das Audio-Element leider nicht.
+            </audio>
+        </div>
+
+    </div>
+
+</body>
+</html>
